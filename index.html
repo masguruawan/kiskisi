@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akses Spreadsheet Informatika Kelas X</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="kartu">
+    <h1>Spreadsheet Informatika Kelas X</h1>
+    <p class="sub">SMK Muhammadiyah Bojong</p>
+
+    <form id="form" novalidate>
+      <label for="nama">Nama lengkap</label>
+      <input id="nama" name="nama" type="text" maxlength="60" autocomplete="name" required>
+
+      <label for="email">Email Google (akun yang dipakai untuk membuka)</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+
+      <label for="kelas">Kelas</label>
+      <select id="kelas" name="kelas" required>
+        <option value="">-- Pilih kelas --</option>
+        <option>X PSPT</option>
+        <option>X TSM 1</option>
+        <option>X TSM 2</option>
+      </select>
+
+      <label for="kode">Kode kelas (dari guru)</label>
+      <input id="kode" name="kode" type="text" autocomplete="off" required>
+
+      <button id="tombol" type="submit">Buka spreadsheet</button>
+    </form>
+
+    <div id="hasil" class="hasil" hidden role="status" aria-live="polite"></div>
+
+    <p class="catatan">Akses dibatasi sampai waktu yang ditentukan guru. Setiap akses tercatat.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
