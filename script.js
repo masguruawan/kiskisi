@@ -1,5 +1,5 @@
 // Ganti dengan URL Web App Apps Script (hasil Deploy > New deployment > Web app)
-const API_URL = 'https://script.google.com/macros/s/AKfycbwrCUQ6VwDayVS_4Jj0qVriuZZXjgj5VR0wssRywsWuIjxyL65LYrTBojcimfTgoWlknA/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbwReiJzEkDcrwYMs5gAui5M1jd_aNyVEmvLAPmhnwPrS2MgI200mIZCTSxYmELyweaAUw/exec';
 
 const form = document.getElementById('form');
 const tombol = document.getElementById('tombol');
