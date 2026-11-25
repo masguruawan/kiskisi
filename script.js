@@ -20,12 +20,11 @@ form.addEventListener('submit', async (e) => {
 
   const data = {
     nama: form.nama.value.trim(),
-    email: form.email.value.trim(),
     kelas: form.kelas.value,
     kode: form.kode.value.trim(),
   };
 
-  if (!data.nama || !data.email || !data.kelas || !data.kode) {
+  if (!data.nama || !data.kelas || !data.kode) {
     tampil('err', teks('Semua kolom harus diisi.'));
     return;
   }
@@ -56,7 +55,7 @@ form.addEventListener('submit', async (e) => {
       a.textContent = 'Buka spreadsheet';
       wadah.appendChild(a);
       wadah.appendChild(document.createElement('br'));
-      wadah.appendChild(teks('Akses berlaku sampai ' + h.batas + ' WIB. Pastikan membuka dengan akun ' + data.email + '.'));
+      wadah.appendChild(teks('Akses berlaku sampai ' + h.batas + ' WIB.'));
       tampil('ok', wadah);
     }
   } catch (err) {
