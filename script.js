@@ -1,5 +1,5 @@
 // Ganti dengan URL Web App Apps Script (hasil Deploy > New deployment > Web app)
-const API_URL = 'https://script.google.com/macros/s/AKfycbzlbmdp4gBg4CFqUbMpfcNUMy8318I2vtoqJBwlY1uEV1_FINBV0FZ1t6IxVlIGSjAtTw/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbwrCUQ6VwDayVS_4Jj0qVriuZZXjgj5VR0wssRywsWuIjxyL65LYrTBojcimfTgoWlknA/exec';
 
 const form = document.getElementById('form');
 const tombol = document.getElementById('tombol');
@@ -21,10 +21,9 @@ form.addEventListener('submit', async (e) => {
   const data = {
     nama: form.nama.value.trim(),
     kelas: form.kelas.value,
-    kode: form.kode.value.trim(),
   };
 
-  if (!data.nama || !data.kelas || !data.kode) {
+  if (!data.nama || !data.kelas) {
     tampil('err', teks('Semua kolom harus diisi.'));
     return;
   }
