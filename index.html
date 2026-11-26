@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Akses Spreadsheet Informatika Kelas X</title>
+  <title>Materi Kelas X</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="kartu">
-    <h1>Spreadsheet Informatika Kelas X</h1>
+  <main class="kartu" id="kartu">
+    <h1>Materi Kelas X</h1>
     <p class="sub">SMK Muhammadiyah Bojong</p>
 
     <form id="form" novalidate>
@@ -23,13 +23,28 @@
         <option>X TSM 2</option>
       </select>
 
-      <button id="tombol" type="submit">Buka spreadsheet</button>
+      <label for="mapel">Mata pelajaran</label>
+      <select id="mapel" name="mapel" required disabled>
+        <option value="">-- Pilih kelas dulu --</option>
+      </select>
+
+      <button id="tombol" type="submit">Buka materi</button>
     </form>
 
     <div id="hasil" class="hasil" hidden role="status" aria-live="polite"></div>
 
+    <section id="materi" hidden>
+      <button type="button" id="kembali" class="sekunder">&larr; Ganti pilihan</button>
+      <h2 id="judul-materi"></h2>
+      <p id="info-materi" class="sub"></p>
+      <div id="bagian"></div>
+    </section>
+
     <p class="catatan">Akses dibatasi sampai waktu yang ditentukan guru. Setiap akses tercatat.</p>
   </main>
+
+  <!-- Penampil PDF (pdf.js), dipakai agar PDF bisa dibaca di HP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
