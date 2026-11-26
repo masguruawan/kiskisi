@@ -51,7 +51,11 @@ body {
   padding: 24px;
 }
 
+.kartu.lebar { max-width: 760px; }
+
 h1 { margin: 0; font-size: 1.3rem; }
+h2 { margin: 14px 0 4px; font-size: 1.15rem; }
+h3 { margin: 0 0 10px; font-size: 1rem; }
 .sub { margin: 4px 0 20px; color: var(--redup); font-size: 0.9rem; }
 
 label { display: block; margin: 14px 0 6px; font-size: 0.9rem; font-weight: 600; }
@@ -98,3 +102,45 @@ button:disabled { opacity: 0.6; cursor: wait; }
 .hasil a { color: inherit; font-weight: 700; word-break: break-all; }
 
 .catatan { margin: 18px 0 0; font-size: 0.8rem; color: var(--redup); }
+
+select:disabled { opacity: 0.6; }
+
+#kembali { width: auto; padding: 8px 12px; margin: 0; }
+
+button.sekunder {
+  width: 100%;
+  margin-top: 0;
+  color: var(--aksen);
+  background: transparent;
+  border: 1px solid var(--aksen);
+}
+
+.bagian {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid var(--garis);
+  border-radius: 10px;
+}
+
+.tombol {
+  display: block;
+  padding: 11px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--aksen-teks);
+  background: var(--aksen);
+  border-radius: 8px;
+}
+.tombol + .tombol { margin-top: 8px; }
+
+.item-berkas + .item-berkas { margin-top: 10px; }
+.berkas-wadah { margin-top: 12px; }
+.halaman, .gambar {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+  border: 1px solid var(--garis);
+  border-radius: 4px;
+}
