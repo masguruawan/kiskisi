@@ -1,5 +1,5 @@
 // Ganti dengan URL Web App Apps Script (hasil Deploy > New deployment > Web app)
-const API_URL = 'https://script.google.com/macros/s/AKfycbzYmvXRtzQ4f4SPQbBO5lXKthcH_L0S5IiOvUCB2StaVuv-PR0nwuKHH0ZyxI3llgq9Qg/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbxRH2wPDlBtRP7cBIFoPGCNLKRe6KYJjPoEKBKIELIfKT-wf7XXslbcVt5mfyTh4L_PGg/exec';
 
 const PDF_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
@@ -129,7 +129,7 @@ function tampilMateri(h) {
   }
 
   if (h.berkas.length) {
-    bagian.append(el('div', { class: 'bagian' }, el('h3', {}, 'Jobsheet dan gambar'), ...h.berkas.map(itemBerkas)));
+    bagian.append(el('div', { class: 'bagian' }, el('h3', {}, 'Jobsheet dan gambar'), ...h.berkas.map((b) => (b.url ? tombolTautan(b.judul, b.url) : itemBerkas(b)))));
   }
 
   if (!bagian.children.length) {
