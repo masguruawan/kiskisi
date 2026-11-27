@@ -1,5 +1,5 @@
 // Ganti dengan URL Web App Apps Script (hasil Deploy > New deployment > Web app)
-const API_URL = 'https://script.google.com/macros/s/AKfycbxRH2wPDlBtRP7cBIFoPGCNLKRe6KYJjPoEKBKIELIfKT-wf7XXslbcVt5mfyTh4L_PGg/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbw7X_3ncZiNzE2-d_GTPHv9OK_PKDd4zupxcuLxwo4RopbXdyW0w0qS2tvt_-igjaw7UA/exec';
 
 const PDF_WORKER = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
